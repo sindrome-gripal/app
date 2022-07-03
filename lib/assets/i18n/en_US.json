@@ -1,0 +1,18 @@
+{
+    "app_name"          : "Fit Works",
+    "username"          : "Username",
+    "username_required" : "The username is required",
+    "password"          : "Password",
+    "password_comfirm"  : "Confirm password",
+    "password_required" : "The password is required",
+    "forgot_password"   : "Forgot my password",
+    "redefine_password" : "Redefine new passwrod",
+    "password_must_be_strong"   : "Weak password",
+    "password_invalid_lengh"    : "Password must contain between 6 and 12 characters",
+    
+    "sign_in"           : "Sign in",
+    "sign_up"           : "Sign up",
+    "without_account"   : "Don't have an account yet?",
+    "create_account"    : "Create your account on Fit Works",
+    "send"              : "Send"
+}

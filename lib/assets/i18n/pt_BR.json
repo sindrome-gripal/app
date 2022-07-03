@@ -1,0 +1,18 @@
+{
+    "app_name"          : "Fit Works",
+    "username"          : "Usuário",
+    "username_required" : "O usuário é obrigatório",
+    "password"          : "Senha",
+    "password_comfirm"  : "Confimar senha",
+    "password_required" : "A senha é obrigatória",
+    "forgot_password"   : "Esqueci minha senha",
+    "redefine_password" : "Redefinir nova senha",
+    "password_must_be_strong"   : "Senha fraca",
+    "password_invalid_lengh"    : "Senha deve conter entre 6 e 12 caracteres",
+    
+    "sign_in"           : "Entrar",
+    "sign_up"           : "Cadastre-se",
+    "without_account"   : "Ainda não possui conta?",
+    "create_account"    : "Crie sua conta no Fit Works",
+    "send"              : "Enviar"
+}
