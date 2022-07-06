@@ -12,7 +12,7 @@ class LoginRepository implements ILogin {
   Future<User> login(User user) async {
     final userDto = UserDto.fromDomain(user);
     var response = await Dio().post(
-      'https://fit-works-api.herokuapp.com/api/v1/auth/login', 
+      'https://sindrome-gripal-api.herokuapp.com/api/v1/auth/login', 
       data: userDto.toFormData()
     );
    

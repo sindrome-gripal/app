@@ -143,10 +143,10 @@ class _SignUpPageState extends ModularState<SignUpPage, SignUpViewModel> {
   Widget build(BuildContext context) {
     return  Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 48, 146, 175),
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 85, 156, 222),
         leading: IconButton( 
           onPressed:() {
               Navigator.of(context).pushReplacementNamed('/login/');

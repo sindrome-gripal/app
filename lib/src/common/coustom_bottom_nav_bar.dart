@@ -49,15 +49,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 onPressed: () =>
                     Navigator.pushNamed(context, '/home/profile'),
               ),
-              
-              // Workout panel
-              IconButton(
-                icon: SvgPicture.asset(
-                    "lib/assets/icons/Workout.svg",
-                ),
-                onPressed: () {},
-              ),
-              
+ 
               // Home page
               IconButton(
                 icon: SvgPicture.asset(
@@ -68,14 +60,6 @@ class CustomBottomNavBar extends StatelessWidget {
                 ),
                 onPressed: () =>
                   Navigator.pushNamed(context, '/home/'),
-              ),
-              
-              // Finances page
-              IconButton(
-                icon: SvgPicture.asset(
-                    "lib/assets/icons/Finances.svg",
-                ),
-                onPressed: () {}
               ),
              
               // Chatbot conversation

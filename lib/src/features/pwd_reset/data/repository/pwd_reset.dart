@@ -11,7 +11,7 @@ class PasswordResetRepository implements IPasswordReset {
   Future<bool> reset(PasswordReset passwordResetData) async {
     final dataDto = RequestResetPasswordDto.fromDomain(passwordResetData);
 
-      // 'https://fit-works-api.herokuapp.com/api/v1/reset-pwd/', 
+      // 'https://sindrome-gripal-api.herokuapp.com/api/v1/reset-pwd/', 
     var response = await Dio().post(
       'localhost:8000/api/v1/reset-pwd/', 
       data: dataDto.toJson()

@@ -13,7 +13,7 @@ class SignUpRepository implements ISignUp {
     final userDto = SignUpUserDto.fromDomain(signUpData);
 
     var response = await Dio().post(
-      'https://fit-works-api.herokuapp.com/api/v1/sign-up/', 
+      'https://sindrome-gripal-api.herokuapp.com/api/v1/sign-up/', 
       data: userDto.toJson()
     );
    

@@ -1,5 +1,5 @@
 {
-    "app_name"          : "Fit Works",
+    "app_name"          : "Síndrome Gripal",
     "username"          : "Usuário",
     "username_required" : "O usuário é obrigatório",
     "password"          : "Senha",
@@ -13,6 +13,6 @@
     "sign_in"           : "Entrar",
     "sign_up"           : "Cadastre-se",
     "without_account"   : "Ainda não possui conta?",
-    "create_account"    : "Crie sua conta no Fit Works",
+    "create_account"    : "Crie sua conta",
     "send"              : "Enviar"
 }

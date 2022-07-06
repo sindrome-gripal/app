@@ -12,7 +12,7 @@ class PasswordSolicitationResetRepository implements ISolicitationPasswordReset 
     final dataDto = SolicitationPasswordDto.fromDomain(solicitationData);
 
     var response = await Dio().post(
-      'https://fit-works-api.herokuapp.com/api/v1/reset-pwd/reset-solicitation/', 
+      'https://sindrome-gripal-api.herokuapp.com/api/v1/reset-pwd/reset-solicitation/', 
       data: dataDto.toJson()
     );
 
