@@ -1,66 +1,17 @@
-# Protótipo
+# Síndrome Gripal App - OpenDataSUS
 
-Link de acesso: https://www.figma.com/file/LyUczkfATF9fDMFnISoYbr/FitWorks?node-id=3%3A8
+App para visualização de dados a respeito da síndrome gripal de casos leves a moderados suspeitos de COVID-19. Para mais informações acesse a página do [OpenDataSUS](https://opendatasus.saude.gov.br/dataset/notificacoes-de-sindrome-gripal-api-elasticsearch).
 
-# Basic Architecture
+-----
+## Requisitos
 
-Flutter Basic Application Architecture.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter 2.10.4 • channel stable • https://github.com/flutter/flutter.git
+- Tools • Dart 2.16.2 • DevTools 2.9.2
+- [Síndrome Gripal API](https://github.com/sindrome-gripal/api) • Open and running on Heroku since  07/2022
 
 
+## Pontos de Atenção
 
-```
+Esta aplicação conta com uma [API (em python)](https://github.com/sindrome-gripal/api) em que estão implementados gerenciamento de contas de usuário (criação de conta redefinição de senha) e as requisições à base de dados do **OpenDataSUS**. 
+As Etapas de login, criação de usuário e redefinição de senha podem falhar na primeira vez visto que a API está rodando no Heroku e fica inatica com pouco atividade. Para o banco de dados segue o mesmo cuidado, é um [MongoDB na nuvem](https://www.mongodb.com/basics/clusters).
 
-lib       
-├── assets........................................| Arquivos estáticos
-│   ├── i18n......................................| Pacote de idiomas
-│   │   ├── en_US.json 
-│   │   └── pt_BR.json 
-│   └── images....................................| Imagens (sempre no formato .svg)
-│       └── dash.svg   
-└── src...........................................| Raíz
-    ├── app_module.dart
-    ├── app_widget.dart
-    ├── features..................................| Funcionalidades da aplicação
-    │   ├── auth..................................| FEATURE - pagina de autenticação
-    │   │   ├── auth_module.dart
-    │   │   ├── data
-    │   │   │   ├── dto...........................| Mapeamento de dados para repository (padrão de dados para entrada e saída)
-    │   │   │   │   └── user_dto.dart
-    │   │   │   └── repository....................| Comunicação externa
-    │   │   │       └── login_repository.dart
-    │   │   ├── domain
-    │   │   │   ├── model.........................| Mapeamento de dados para a parte interna da aplicação
-    │   │   │   │   └── user.dart
-    │   │   │   ├── repository....................| Lógica/Criação das estruturas de lógica de negócio
-    │   │   │   │   └── login_interface.dart
-    │   │   │   └── usecase.......................| Validação e formatação de dados para serem apresentados para o usuário
-    │   │   │       └── login_usecase.dart
-    │   │   └── presentation......................| Telas de apresentação da feature auth
-    │   │       ├── view
-    │   │       │   ├── page
-    │   │       │   │   └── login_page.dart
-    │   │       │   └── widget....................| Componentes das telas da feature auth
-    │   │       └── viewmodel.....................| Camada de recepção dos dados (entrada do usuário)
-    │   │           ├── login_viewmodel.dart
-    │   │           └── login_viewmodel.g.dart
-    │   ├── onboarding............................| Telas iniciais antes de fazer login
-    │   │   └── presentation
-    │   │       ├── page
-    │   │       └── widget
-    │   └── sign_up...............................| FEATURE - pagina para criar conta
-    └── main.dart.................................| Entrypoint - primeiro arquivo a ser chamado
-
-```
